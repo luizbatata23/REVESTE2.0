@@ -9,6 +9,7 @@
   "dependencies": {
     "cors": "^2.8.6",
     "express": "^4.22.1",
-    "mysql2": "^3.17.0"
+    "mysql2": "^3.17.0",
+    "sql.js": "^1.14.1"
   }
 }

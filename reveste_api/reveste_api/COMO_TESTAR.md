@@ -29,6 +29,16 @@ Siga estes passos para colocar tudo para rodar no seu computador:
    - **Senha:** `123`
 4. Se tudo estiver certo, você verá um alerta de "Sucesso" e será levado para a página de vitrine!
 
+---- Inserir um usuário de teste
+--INSERT INTO usuarios (nome, email, senha, role) 
+--VALUES ('Administrador', 'admin@reveste.com', '123456', 'admin')
+--ON DUPLICATE KEY UPDATE email=email;
+--
+--INSERT INTO usuarios (nome, email, senha, role) 
+--VALUES ('Usuário Teste', 'teste@reveste.com', '123', 'user')
+--ON DUPLICATE KEY UPDATE email=email;
+--
+
 ## 💡 Dicas de Teste
 - **Sem XAMPP:** Se você fechar o XAMPP e tentar logar, a API avisará no terminal que está usando o "Fallback JSON", mas o login `teste@reveste.com` continuará funcionando porque ele também está no arquivo `users.json`.
 - **Inspecionar:** No navegador, aperte `F12` e vá na aba **Console** para ver se aparece algum erro de conexão caso o login falhe.
