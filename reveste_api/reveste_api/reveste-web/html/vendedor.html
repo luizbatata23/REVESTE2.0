@@ -11,10 +11,19 @@
   <h2>Cadastro de Vendedor</h2>
 
   <input id="nome" placeholder="Nome completo">
+  <span class="err" id="err-nome"></span>
+
   <input id="cpf" placeholder="CPF ou CNPJ">
+  <span class="err" id="err-cpf"></span>
+
   <input id="loja" placeholder="Nome da loja">
-  <input id="telefone" placeholder="Telefone">
+  <span class="err" id="err-loja"></span>
+
+  <input id="telefone" placeholder="Telefone (ex: 67912345678)">
+  <span class="err" id="err-telefone"></span>
+
   <input id="email" placeholder="Email">
+  <span class="err" id="err-email"></span>
 
   <button onclick="cadastrar()">Cadastrar</button>
 

@@ -56,3 +56,10 @@ button:hover {
 .sucesso {
   color: green;
 }
+
+.err {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 6px;
+  display: block;
+}

@@ -27,7 +27,16 @@ async function getDB() {
       role TEXT DEFAULT 'user'
     )
   `);
-
+  db.run(`
+  CREATE TABLE IF NOT EXISTS vendedores (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nome TEXT NOT NULL,
+    cpf TEXT NOT NULL UNIQUE,
+    loja TEXT NOT NULL,
+    telefone TEXT,
+    email TEXT NOT NULL UNIQUE
+  )
+`);
   // Insere usuários padrão se vazio
   const result = db.exec("SELECT COUNT(*) as total FROM usuarios");
   const total = result[0].values[0][0];
